@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        /*var n1
+        var n2 
+        var resultado
+
+        //ver se o aluno foi aprovado no bimeste
+
+        var resultado = parseInt(n1) + parseInt(n2)
+
+
+
+        console.log('a soma do seu semestre foi ' + resultado)
+        */
+
+        function somar() {
+            var n1 = document.getElementById('c1').value
+            var n2 = document.getElementById('c2').value
+            var soma
+
+            soma = Number(n1) + Number(n2)
+
+            //adiciona o resultado ao h1 (resultado)
+
+            resultado = document.getElementById('calculadora').innerHTML = 'A soma dos números é ' + soma
+        }
+
+        function subitrair() {
+            var n1 = document.getElementById('c1').value
+            var n2 = document.getElementById('c2').value
+            
+            //logica da subitração
+            var subitrair = Number(n1) - Number(n2)
+
+            resultado = document.getElementById('calculadora').innerHTML = 'A subitração dos números é ' + subitrair
+        }
+
+        function dividir() {
+            var n1 = document.getElementById('c1').value
+            var n2 = document.getElementById('c2').value
+
+            //logica da divisão
+            var dividir = Number(n1) / Number(n2)
+
+            resultado = document.getElementById('calculadora').innerHTML = 'A divisão dos números é ' + dividir
+        }
+
+        function multiplicar(){
+            var n1 = document.getElementById('c1').value
+            var n2 = document.getElementById('c2').value
+
+            //lógoca da multiplicação
+            var multiplicar = Number(n1) * Number(n2)
+            
+            resultado = document.getElementById('calculadora').innerHTML = 'A multiplicação é ' + multiplicar
+
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Java Scrip no HTML</h1>
+
+    <form action="" method="">
+        <h1>Calculadora</h1>
+        <p>n1 <input type="text" id="c1"></p>
+        <p>n2 <input type="text" id="c2"></p>
+        <input type="button" value="somar" onclick="somar()">
+        <input type="button" value="subitrair" onclick="subitrair()">
+        <input type="button" value="dividir" onclick="dividir()">
+        <input type="button" value="multiplicar" onclick="multiplicar()">
+
+        <h1 id="calculadora"></h1>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Alata", sans-serif;
+}
+
+header{
+    background-image: url(imagens/desktop/image-hero.jpg);
+    color: white;
+}
+
+nav ul{
+    margin: 3em;
+}
+nav li{
+    text-decoration: none;
+    display: inline;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+.immersive{
+    text-transform: uppercase;
+    border: 10px solid blue;
+}

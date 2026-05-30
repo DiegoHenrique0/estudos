@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var cargo = prompt('digite um cargo')
+        var salario = prompt('Digite o salario')
+        var aumento
+
+       salario = Number(salario)
+
+        switch (cargo) {
+            case 'estagiario':
+                aumento = 100/100
+                break;
+
+            case 'analista':
+                aumento = 50/100
+                break;
+            case 'gerente':
+                aumento = 20/100
+                break;
+            case 'presidente':
+                aumento = 10/100
+                break;
+            default:
+                alert('valor não encontrado na base de dados')
+                break;
+        }
+
+        var salarioNovo = salario + (salario * aumento)
+        console.log('O seu novo salario será de R$ ' + salarioNovo)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        contador = 1
+        qtd = Number(prompt('quantas notas no semestre ate agora?'))
+        nota = 0
+        soma = 0
+        media = 0
+        resultado = 0
+
+        while (contador <= qtd) {
+            nota = Number(prompt('qual a ' + contador + 'ª nota ?'))
+            soma = soma + nota
+            contador++
+        }
+
+       console.log('a soma das notas foi de ' + soma)
+       console.log('a quantidade de bimestre foi ' + qtd)
+
+       media = soma/qtd
+       console.log('a sua media foi de ' + media)
+
+       resultado = media > 6.9 ? 'Aprovado' : 'Reprovado'
+       resultado = resultado.toUpperCase() //transforma a toda a string em maiuscula
+       console.log('Você está ' + resultado)
+    </script>
+
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore excepturi architecto cum quisquam repellat dolore suscipit ad! Sint asperiores libero expedita quo aut, dignissimos necessitatibus tenetur, deleniti laborum, veniam voluptatum.</p>
+</body>
+</html>

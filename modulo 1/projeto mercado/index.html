@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8 pt-br">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css.css">
+    <script src="java.js"></script>
+    <title>carrinho de mercado</title>
+    <link rel="shortcut icon" href="imagens/cart-fill.svg" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>loja da unidade</h1>
+
+        <table class="table  table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>imagem</th>
+                    <th>produto</th>
+                    <th>valor unitário</th>
+                    <th>quantidade</th>
+                    <th>total</th>
+                </tr>
+            </thead>
+
+            <tbody class="align-middle">
+                <tr>
+                    <td>
+                        <img src="imagens/shopping.webp" alt="imagem do protudo" width="200">
+                    </td>
+                    <td>
+                        <div>Tablet redmi Pad SE</div>
+                        <div>
+                            <b>cor:</b>
+                            cinza
+                        </div>
+                        <div>
+                            <b>código:</b>
+                            12345
+                        </div>
+                    </td>
+                    <td id="valor_1">
+                        R$ 1.000,00
+                    </td>
+                    <td>
+                        <samp class="badge bg-danger" onclick="alterarQtd(1, '-')"><i class="bi bi-dash"></i></samp>
+                        <span id="qtd_1">0</span>
+                        <samp class="badge bg-success" onclick="alterarQtd(1, '+')"><i class="bi bi-plus"></i></samp>
+                    </td>
+                    <td id="total_1">0</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="imagens/iphone.webp" alt="imagem do protudo" width="200">
+                    </td>
+                    <td>
+                        <div>iPhone 17 Pro Max 256GB</div>
+                        <div>
+                            <b>cor:</b>
+                            Laranja-cósmico
+                        </div>
+                        <div>
+                            <b>código:</b>
+                            12345
+                        </div>
+                    </td>
+                    <td id="valor_2">
+                        R$ 8999,00
+                    </td>
+                    <td>
+                        <samp class="badge bg-danger" onclick="alterarQtd(2, '-')"><i class="bi bi-dash"></i></samp>
+                        <span id="qtd_2">0</span>
+                        <samp class="badge bg-success" onclick="alterarQtd(2, '+')"><i class="bi bi-plus"></i></samp>
+                    </td>
+                    <td id="total_2">0</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="imagens/placa de vidio.webp" alt="imagem do protudo" width="200">
+                    </td>
+                    <td>
+                        <div>Placa de vídeo Asus Rtx 5060 8gb Dual
+                        </div>
+                        <div>
+                            <b>cor:</b>
+                            preto e cinza
+                        </div>
+                        <div>
+                            <b>código:</b>
+                            12345
+                        </div>
+                    </td>
+                    <td id="valor_3">
+                        R$ 2800,00
+                    </td>
+                    <td>
+                        <samp class="badge bg-danger" onclick="alterarQtd(3, '-')"><i class="bi bi-dash"></i></samp>
+                        <span id="qtd_3">0</span>
+                        <samp class="badge bg-success" onclick="
+                        alterarQtd(3, '+')"><i class="bi bi-plus"></i></samp>
+                    </td>
+                    <td id="total_3">0</td>
+                </tr>
+            </tbody>
+        </table>
+        <footer class="text-center">
+            <div>
+                <i class="bi bi-cart"></i>Subtotal: <span id="subTotal">R$0</span>
+            </div>
+        </footer>
+
+    </div>
+    
+</body>
+
+</html>
