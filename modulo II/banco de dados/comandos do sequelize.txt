@@ -4,7 +4,7 @@ npm i --save-dev sequelize-cli
 
 npx sequelize-cli
 
-Comandos utlizados pelo cli:
+Comandos utlizados pelo cli (para executar os comandos tem que colocar no  inicio o "NPX")
 
 ----------------------------------------------------------------------------------------------------------------------------
  🗄️ Banco de Dados e Inicialização
