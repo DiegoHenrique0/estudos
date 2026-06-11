@@ -1,0 +1,45 @@
+npm i sequelize mysql2
+
+npm i --save-dev sequelize-cli
+
+npx sequelize-cli
+
+Comandos utlizados pelo cli:
+
+----------------------------------------------------------------------------------------------------------------------------
+ 🗄️ Banco de Dados e Inicialização
+----------------------------------------------------------------------------------------------------------------------------
+  sequelize db:create: Cria o banco de dados especificado na configuração.
+  sequelize db:drop: Exclui o banco de dados especificado na configuração.
+  sequelize init: Inicializa o projeto criando todas as pastas estruturais.
+  sequelize init:config: Inicializa apenas a pasta de configuração.
+  sequelize init:migrations: Inicializa apenas a pasta de migrações.
+  sequelize init:models: Inicializa apenas a pasta de modelos.
+  sequelize init:seeders: Inicializa apenas a pasta de populadores (seeders).
+
+----------------------------------------------------------------------------------------------------------------------------
+  🔄 Migraçõessequelize 
+----------------------------------------------------------------------------------------------------------------------------
+  db:migrate: Executa todas as migrações pendentes no banco de dados.
+  sequelize db:migrate:status: Lista o status de execução de todas as migrações.
+  sequelize db:migrate:undo: Reverte a última migração que foi executada.
+  sequelize db:migrate:undo:all: Reverte todas as migrações já executadas no projeto.
+  sequelize db:migrate:schema:timestamps:add: Atualiza a tabela de controle para incluir campos de data/hora.
+  sequelize migration:generate: Gera um novo arquivo de migração em branco.
+  sequelize migration:create: Gera um novo arquivo de migração em branco (idêntico ao anterior).
+
+----------------------------------------------------------------------------------------------------------------------------
+  📦 Modelos e Tabelas
+----------------------------------------------------------------------------------------------------------------------------
+  sequelize model:generate: Gera um novo modelo JavaScript e sua respectiva migração.
+  sequelize model:create: Gera um novo modelo JavaScript e sua respectiva migração (idêntico ao anterior).
+
+----------------------------------------------------------------------------------------------------------------------------  
+  🌱 Populadores (Seeders)
+----------------------------------------------------------------------------------------------------------------------------
+  sequelize seed:generate: Gera um novo arquivo de população de dados em branco.
+  sequelize seed:create: Gera um novo arquivo de população de dados em branco (idêntico ao anterior).
+  sequelize db:seed:all: Executa todos os arquivos de população de dados disponíveis.
+  sequelize db:seed: Executa um arquivo de população de dados específico.
+  sequelize db:seed:undo: Remove do banco os dados inseridos pelo último populador executado.
+  sequelize db:seed:undo:all: Remove do banco os dados inseridos por todos os populadores.
