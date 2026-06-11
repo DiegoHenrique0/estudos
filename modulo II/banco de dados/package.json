@@ -25,6 +25,7 @@
     "safer-buffer": "^2.1.2",
     "semver": "^7.8.3",
     "sequelize": "^6.37.8",
+    "sequelize-auto": "^0.8.8",
     "sequelize-pool": "^7.1.0",
     "sql-escaper": "^1.3.3",
     "toposort-class": "^1.0.1",

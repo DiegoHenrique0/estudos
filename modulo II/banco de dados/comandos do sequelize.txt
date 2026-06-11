@@ -1,10 +1,16 @@
-npm i sequelize mysql2
+------npm i sequelize mysql2
 
-npm i --save-dev sequelize-cli
+------npm i --save-dev sequelize-cli
 
-npx sequelize-cli
+------npx sequelize-cli
 
-Comandos utlizados pelo cli (para executar os comandos tem que colocar no  inicio o "NPX")
+------Comandos utlizados pelo cli (para executar os comandos tem que colocar no  inicio o "NPX")
+
+----------------------------------------------------------------------------------------------------------------------------
+ 👁️(comando para importar coisas de um banco de dados existente)
+----------------------------------------------------------------------------------------------------------------------------
+ 1- npm i -d sequelize-auto(tem que instalar antes de fazer tudo)
+ 2- npx sequelize-auto -h 127.0.0.1 -d (nome do banco de dados) -u root -x (senha do banco de dados) -p 3306 -e mysql -o "./models"
 
 ----------------------------------------------------------------------------------------------------------------------------
  🗄️ Banco de Dados e Inicialização
