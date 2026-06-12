@@ -1,6 +1,10 @@
-const Sequelize = require('sequelize');
-module.exports = function(sequelize, DataTypes) {
-  return sequelize.define('funcionarios', {
+//const Sequelize = require('sequelize');
+import { Sequelize, DataTypes } from "sequelize";
+import db from "../config/conexaoMysql.js"
+
+//exports default = function(sequelize, DataTypes) {
+  export default db.define(
+    'funcionarios', {
     id_funcionario: {
       autoIncrement: true,
       type: DataTypes.INTEGER.UNSIGNED.ZEROFILL,
@@ -43,7 +47,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     }
   }, {
-    sequelize,
+   // sequelize,
     tableName: 'funcionarios',
     timestamps: false,
     indexes: [
@@ -88,5 +92,5 @@ module.exports = function(sequelize, DataTypes) {
       },
     ]
   });
-};
+//};
 

@@ -1,4 +1,4 @@
-const { Sequelize } = require('sequelize');
+import { Sequelize } from'sequelize';
 const data = new Date()
 
 const sequelize = new Sequelize('trabalho', 'root', '12345', {
@@ -18,5 +18,5 @@ async function verificarConexao() {
     console.log(data) //mostra o horario de verificação 
   }
 }
-
+export default sequelize;
 verificarConexao();

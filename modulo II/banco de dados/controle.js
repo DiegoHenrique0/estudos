@@ -1,4 +1,4 @@
-import {funcionarios} from "./models/funcionarios.js"
+import funcionarios from "./models/funcionarios.js"
 import { Op } from "sequelize"
 
 export async function imprimirTodos() {
