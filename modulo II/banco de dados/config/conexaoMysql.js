@@ -5,7 +5,7 @@ const sequelize = new Sequelize('trabalho', 'root', '12345', {
   host: '127.0.0.1',
   port: 3306,
   dialect: 'mysql',
-  logging: console.log // Mostra as consultas SQL no terminal
+  //logging: console.log // Mostra as consultas SQL no terminal
 });
 
 async function verificarConexao() {
@@ -19,4 +19,4 @@ async function verificarConexao() {
   }
 }
 export default sequelize;
-verificarConexao();
+//verificarConexao();
