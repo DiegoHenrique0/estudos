@@ -1,6 +1,8 @@
 import Alert from 'react-bootstrap/Alert';
 import FuncaoBotao from './componentes/FuncaoBotao.js';
 import ClasseBotao from './componentes/ClasseBotao.js';
+import CabecalhoFuncao from './componentes/CabecalhoFuncao.js';
+import CabecalhoClasse from './componentes/CabecalhoClasse.js';
 export default function App() {
 
   //criação de lista de tarefas
@@ -12,7 +14,7 @@ export default function App() {
   ];
   //calculo de contidade de mateias concluidas
   const totalConcluidas = tarefas.filter(tarefa => tarefa.concluida).length;
-  const totalGeral =tarefas.length
+  const totalGeral = tarefas.length
 
   return (
     //utiliza (map) para mepear e ler todos os itens da lista de tarefas
@@ -33,14 +35,35 @@ export default function App() {
           return (
             <Alert key={tarefa.id} variant="danger">
               <h1>
-               Faça a tarefa!!! {tarefa.descricao} (Materia: {tarefa.id})❌ 
+                Faça a tarefa!!! {tarefa.descricao} (Materia: {tarefa.id})❌
               </h1>
             </Alert>
           );
         }
       })}
-      <FuncaoBotao/>
-      <ClasseBotao/>
+      <FuncaoBotao nome="Botão Função" />
+      <ClasseBotao nome=" Botão Classe" />
+
+      <CabecalhoFuncao>
+        <p>
+          este paragrafo esté na pasta principal app, sendo chamado pela funçao no componentes/cabeçalho!
+        </p>  
+        <p>
+          este paragrafo esté na pasta principal app, sendo chamado pela funçao no componentes/cabeçalho!
+        </p>  
+        <p>
+          este paragrafo esté na pasta principal app, sendo chamado pela funçao no componentes/cabeçalho!
+        </p>
+      </CabecalhoFuncao>
+
+      <CabecalhoClasse>
+        <p>
+          este paragrafo foi escrito usando class e esta na parte principal do app!
+        </p>
+        <p>
+          este paragrafo foi escrito usando class e esta na parte principal do app!
+        </p>
+      </CabecalhoClasse>
     </div>
   );
 }
