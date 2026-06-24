@@ -7,10 +7,10 @@ export default function App() {
 
   //criação de lista de tarefas
   const tarefas = [
-    { id: "programação", descricao: "estudar react", concluida: false },
+    { id: "programação", descricao: "estudar react", concluida: true },
     { id: "mat", descricao: "matemática", concluida: true },
-    { id: "ciencias", descricao: "ciencias", concluida: true },
-    { id: "calculo", descricao: "calculo 2", concluida: false }
+    { id: "ciencias", descricao: "ciencias", concluida: false },
+    { id: "calculo", descricao: "calculo 2", concluida: true }
   ];
   //calculo de contidade de mateias concluidas
   const totalConcluidas = tarefas.filter(tarefa => tarefa.concluida).length;
