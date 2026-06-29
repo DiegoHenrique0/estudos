@@ -3,7 +3,7 @@ const app = express()
 const port = 3000
 
 app.get('/', (reg, res) =>{
-    res.json({"mensagem": "teste de conexâ"})
+    res.json({"mensagem": "teste de coneção"})
     res.end()
 })
 
