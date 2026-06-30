@@ -19,13 +19,24 @@ module.exports = (sequelize, DataTypes) => {
     createdAt: {
       type: DataTypes.DATE,
       allowNull: false,
-      defaultValue: DataTypes.NOW
+      defaultValue: DataTypes.NOW,
+      get() {
+        const rawValue = this.getDataValue('createdAt');
+        if (!rawValue) return null;
+        const date = new Date(rawValue);
+        return date.toLocaleDateString('pt-BR') + ' ' + date.toLocaleTimeString('pt-BR');
+      }
     },
-    // É altamente recomendado adicionar o updatedAt também, pois o Sequelize gerencia ambos juntos
     updatedAt: {
       type: DataTypes.DATE,
       allowNull: false,
-      defaultValue: DataTypes.NOW
+      defaultValue: DataTypes.NOW,
+      get() {
+        const rawValue = this.getDataValue('updatedAt');
+        if (!rawValue) return null;
+        const date = new Date(rawValue);
+        return date.toLocaleDateString('pt-BR') + ' ' + date.toLocaleTimeString('pt-BR');
+      }
     }
   }, {
     sequelize,
